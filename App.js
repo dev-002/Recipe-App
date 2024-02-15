@@ -1,18 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
+import AppNavigation from "./src/navigation/index";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text> Recipe App </Text>
-    </View>
-  );
+  return <AppNavigation />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "orange",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
