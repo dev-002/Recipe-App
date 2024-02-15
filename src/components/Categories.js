@@ -4,6 +4,7 @@ import {
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 import Animated, { FadeInDown } from "react-native-reanimated";
+import { CachedImages } from "../heplers/image";
 
 export default function Categories({
   categories: categoryData,
@@ -28,8 +29,8 @@ export default function Categories({
               className="flex items-center space-y-1"
             >
               <View className={`rounded-full p-[6px] ` + activeClassButton}>
-                <Image
-                  source={{ uri: cat?.strCategoryThumb }}
+                <CachedImages
+                  uri={cat?.strCategoryThumb}
                   style={{ width: hp(6), height: hp(6) }}
                   className="rounded-full"
                 />

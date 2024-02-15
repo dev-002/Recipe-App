@@ -7,6 +7,7 @@ import {
 import MasonryList from "@react-native-seoul/masonry-list";
 import Animated, { FadeInDown } from "react-native-reanimated";
 import Loading from "./loading";
+import { CachedImages } from "../heplers/image";
 
 export default function Recipes({ categories, meals }) {
   return (
@@ -52,8 +53,8 @@ const RecipeCard = ({ item, index }) => {
         }}
         className="flex justify-center mb-4 space-y-1"
       >
-        <Image
-          source={{ uri: item?.strMealThumb }}
+        <CachedImages
+          uri={item?.strMealThumb}
           style={{
             width: "100%",
             height: index % 3 == 0 ? hp(25) : hp(35),
