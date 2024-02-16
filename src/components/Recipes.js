@@ -65,6 +65,7 @@ const RecipeCard = ({ item, index, navigation }) => {
             height: index % 3 == 0 ? hp(25) : hp(35),
             borderRadius: 35,
           }}
+          sharedTransitionTag={item.strMeal}
           className="bg-black/5"
         />
         <Text
