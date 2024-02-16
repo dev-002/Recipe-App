@@ -48,7 +48,7 @@ export default function HomeScreen() {
   const handleChangeCategory = (category) => {
     getRecipes(category);
     setActiveCategory(category);
-    // setMeals([]);
+    setMeals([]);
   };
 
   return (
@@ -56,11 +56,10 @@ export default function HomeScreen() {
       <StatusBar style="dark" />
       <ScrollView
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ padding: 50 }}
-        className="space-y-6 pt-14"
+        className="space-y-6 pt-12"
       >
         {/* Icons */}
-        <View className="mx-4 flex-row justify-between item-center mb-2">
+        <View className="mx-4 flex-row justify-between item-center">
           <Image
             source={require("../../assets/images/avatar.png")}
             style={{ height: hp(5), width: hp(5.5) }}
@@ -70,8 +69,8 @@ export default function HomeScreen() {
 
         {/* Greetings */}
         <View className="mx-4 space-y-2 mb-2">
-          <Text style={{ fontSize: hp(1.7) }} className="text-neutral-600">
-            Hello, Dev!
+          <Text style={{ fontSize: hp(2) }} className="text-neutral-600">
+            Hello, Devansh
           </Text>
           <Text
             style={{ fontSize: hp(3.8) }}

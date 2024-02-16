@@ -1,10 +1,7 @@
 import { useEffect } from "react";
 import { View, Image, Text } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp,
-} from "react-native-responsive-screen";
+import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 import Animated, { useSharedValue, withSpring } from "react-native-reanimated";
 import { useNavigation } from "@react-navigation/native";
 
@@ -18,7 +15,7 @@ export default function WelcomeScreen() {
     ringPadding1.value = 0;
     ringPadding2.value = 0;
     setTimeout(
-      () => (ringPadding1.value = withSpring(ringPadding1.value + hp(5))),
+      () => (ringPadding1.value = withSpring(ringPadding1.value + hp(5.3))),
       100
     );
     setTimeout(
@@ -53,7 +50,7 @@ export default function WelcomeScreen() {
           style={{ fontSize: hp(7) }}
           className="font-bold text-white tracking-widest"
         >
-          Foody
+          FoodCoast
         </Text>
         <Text
           style={{ fontSize: hp(2) }}
