@@ -12,7 +12,8 @@ This project is a Recipe App built using React Native and Expo. It allows users 
 6. Axios (for fetching recipe data from an API)
 7. React Native Youtube Iframe (to integrate the youtube video in app)
 8. React Native Heroicons (for the icons)
-   Database for Meals:[themealsdb](https://www.themealdb.com/)
+
+Database for Meals:[themealsdb](https://www.themealdb.com/)
 
 ## Getting Started
 
@@ -29,10 +30,17 @@ This project is a Recipe App built using React Native and Expo. It allows users 
 
 Here are some screenshots of the Recipe App:
 
-![Welcome Screen](ScreenShots/Welcome_Screen.jpg)
-![Home Screen](ScreenShots/Home_Screen.jpg)
-![Recipe Detail](ScreenShots/Recipe_Detail_Screen1.jpg)
-![Recipe Detail](ScreenShots/Recipe_Detail_Screen2.jpg)
+<div style="margin:5px">
+   <div style="display:flex; justify-content:center;">
+   <img src="ScreenShots/Welcome_Screen.jpg" alt="Screenshot 1" style="width: 200px; margin-right: 10px;">
+   <img src="ScreenShots/Home_Screen.jpg" alt="Screenshot 2" style="width: 200px;">
+  </div>
+  
+  <div style="display:flex; justify-content:center; margin-top:10px">
+   <img src="ScreenShots/Recipe_Detail_Screen1.jpg" alt="Screenshot 3" style="width: 200px; margin-right: 10px;">
+   <img src="ScreenShots/Recipe_Detail_Screen2.jpg" alt="Screenshot 4" style="width: 200px;">
+  </div>
+</div>
 
 ## Acknowledgement
 
